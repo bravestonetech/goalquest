@@ -34,7 +34,7 @@ export default async function Home({
             Authorization: `Bearer ${access_token}`
             }
           });
-          console.log(balance.data);
+          
           return <li key={account.number}>{account.type} {account.number} ({balance.data.combinedBalances[0].totalEquity})</li>
        })}
 
